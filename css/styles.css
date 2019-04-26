@@ -1,0 +1,35 @@
+.top-bar-logga {
+  width: 40px;
+}
+
+body {
+  background-color: white;
+}
+
+.navbar {
+  background-color: #93202F;
+}
+
+
+.nav-item {
+  color: white;
+}
+
+.active-link {
+  color: #D9A9A9;
+}
+
+.nav-link:hover {
+  color: #D9A9A9;
+}
+
+.first-div {
+  color: black;
+  width: 50%;
+  padding-left: 50%;
+  margin-top: 80px;
+}
+
+.nav-item-right {
+  float: right;
+}
