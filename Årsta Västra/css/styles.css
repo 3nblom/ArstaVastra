@@ -1,0 +1,103 @@
+body{
+  text-align: center;
+  width: 80%;
+  margin: 0 10%;
+
+  background-image: url('background.png');
+  background-position: center center;
+  background-repeat: no-repeat; /*we want to have one single image not a repeated one */
+  background-attachment: fixed;
+  background-size: cover; /*this sets the image to fullscreen covering the whole screen */
+  background-color: white; /** when image is loading, the background is white */
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.image.jpg',sizingMethod='scale');
+  -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='image.jpg',sizingMethod='scale')";
+
+}
+
+
+hr {
+  width: 82%;
+  border-width: 2.5px;
+  color: #B9B9B9;
+  height: 10px;
+}
+
+
+/****************** First section ******************/
+
+.first-section {
+  height: 120px;
+  margin: 10px 0;
+}
+
+
+/****************** left column ******************/
+
+.column-left {
+  /** background-color: #E2E0E0; **/
+  width: 50%;
+  text-align: left;
+}
+
+.top-bar-logo {
+  height: 120px;
+  margin: 0 15px;
+  float: left;
+}
+
+.arsta-vastra {
+  margin: 15px;
+  color: #8D1C32;
+}
+
+
+
+
+/****************** right column ******************/
+
+.column-right {
+  /** background-color: #E2E0E0; **/
+  width: 50%;
+  text-align: center;
+  position: relative;
+}
+
+
+ .column-right ul {
+   position: absolute;
+   top: 50%;
+   left: 70%;
+   margin-right: -50%;
+   transform: translate(-50%, -50%);
+
+ }
+
+ .column-right li {
+   font-size: 120%;
+   display: inline-block;
+   color: #8D1C32;
+   padding: 0 20px;
+ }
+
+.column-right a {
+  color: #8D1C32;
+}
+
+.column-right a:hover {
+  color: #A3737D;
+  text-decoration: none;
+}
+
+
+
+
+/****************** 2nd section ******************/
+
+.second-section {
+  text-align: center;
+}
+
+.team-img {
+  width: 800px;
+
+}
