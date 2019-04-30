@@ -58,19 +58,52 @@ hr {
 .column-right {
   /** background-color: #E2E0E0; **/
   width: 50%;
-  text-align: center;
   position: relative;
 }
 
+.column-right li {
+  margin-top: 12px;
+}
 
- .column-right ul {
+.navbar {
+  position: absolute;
+  top: 15%;
+  left: 55%;
+  margin-right: -45%;
+  transform: translate(-50%, -50%);
+}
+
+.navbar-toggler {
+  position: absolute;
+  top: 200%;
+}
+
+.navbar-collapse {
+  text-align: left;
+  position: absolute;
+  top: 300%;
+  transform: translate(-50%, -50%);
+}
+
+.show {
+  text-align: left;
+  position: absolute;
+  top: 1200%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+ /** .column-right ul {
    position: absolute;
    top: 50%;
    left: 70%;
    margin-right: -50%;
    transform: translate(-50%, -50%);
 
- }
+ }**/
+
+
 
  .column-right li {
    font-size: 120%;
