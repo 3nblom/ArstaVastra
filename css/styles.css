@@ -1,9 +1,4 @@
 body{
-  text-align: center;
-  width: 80%;
-  margin: 0 10%;
-  font-size: 110%;
-
   background-image: url('background.png');
   background-position: center center;
   background-repeat: no-repeat; /*we want to have one single image not a repeated one */
@@ -16,19 +11,14 @@ body{
 }
 
 
-hr {
-  width: 85%;
-  border-width: 2.5px;
-  color: #B9B9B9;
-  height: 10px;
-}
-
-
 /****************** First section ******************/
 
-.first-section {
-  height: 120px;
-  margin: 10px 0;
+.column {
+  height: 150px;
+  font-size: 25px;
+  float: left;
+  margin-bottom: 20px;
+
 }
 
 
@@ -36,86 +26,51 @@ hr {
 
 .column-left {
   /** background-color: #E2E0E0; **/
-  width: 47%;
-  margin-left: 3%;
-  text-align: left;
+  text-align: center;
+  width: 50%;
+  height: 150px;
 }
 
 .top-bar-logo {
-  height: 120px;
-  margin: 0 15px;
-  float: left;
+  height: 150px;
 }
-
-.arsta-vastra {
-  margin: 15px;
-  color: #8D1C32;
-}
-
-
 
 
 /****************** right column ******************/
 
 .column-right {
-  /** background-color: #E2E0E0; **/
+  text-align: center;
+  /** background-color: #E8D6D6; **/
   width: 50%;
-  position: relative;
+  height: 150px;
+  line-height: 40px;
 }
 
-.column-right li {
-  margin-top: 12px;
+ul {
+  /** background-color: olive; **/
+  margin-top: 60px;
 }
-
-.navbar {
-  position: absolute;
-  top: 15%;
-  left: 55%;
-  margin-right: -45%;
-  transform: translate(-50%, -50%);
-}
-
-.navbar-toggler {
-  position: absolute;
-  top: 200%;
-}
-
-.navbar-collapse {
-  text-align: left;
-  position: absolute;
-  top: 300%;
-  transform: translate(-50%, -50%);
-}
-
-.show {
-  text-align: left;
-  position: absolute;
-  top: 1200%;
-  transform: translate(-50%, -50%);
-}
-
-
-
- /** .column-right ul {
-   position: absolute;
-   top: 50%;
-   left: 70%;
-   margin-right: -50%;
-   transform: translate(-50%, -50%);
-
- }**/
-
-
 
  .column-right li {
-   font-size: 120%;
    display: inline-block;
    color: #8D1C32;
    padding: 0 20px;
+
  }
+ @media screen and (max-width: 970px) {
+  .column-right li {
+    display: block;
+     padding: 0 20px;
+  }
+  ul {
+    margin-top: 20px;
+  }
+}
+
 
 .column-right a {
   color: #8D1C32;
+  text-decoration: none;
 }
 
 .column-right a:hover {
@@ -128,8 +83,14 @@ hr {
 
 /****************** 2nd section ******************/
 
+.top-hr {
+  width: 80%;
+  border-width: 2px;
+  color: #B9B9B9;
+}
+
 .second-section {
-  text-align: center;
+
 }
 
 .team-img {
