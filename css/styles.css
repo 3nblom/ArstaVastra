@@ -63,20 +63,22 @@ body{
 /****************** Drop-down button ******************/
 
 .dropbtn {
-  color: #8D1C32;
+
   background-image: url('menu.png');
   width: 80px;
   height: 55px;
-  background-color: inherit;
-  padding: 16px;
-  font-size: 35px;
-  font-weight: 700;
   border: none;
   cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+
+  /** color: #8D1C32;
+  padding: 16px;
+  font-size: 35px;
+  font-weight: 700;     if text is used**/
 }
 
 .dropbtn:hover {
-  color: #A3737D;
+  opacity: 0.7;
 }
 
 .dropdown {
