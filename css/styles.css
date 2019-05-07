@@ -20,7 +20,7 @@ body{
   font-size: 25px;
   background-color: white;
   float: left;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 
 }
 
@@ -159,6 +159,13 @@ body{
   width: 100%;
   padding-top: 50px;
   text-align: center;
+}
+
+@media screen and (max-width: 1050px) {
+
+  .column {
+    margin-bottom: 250px;
+  }
 }
 
 .resultat-bild {
