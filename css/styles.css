@@ -64,6 +64,10 @@ body{
 
 .dropbtn {
   color: #8D1C32;
+  background-image: url('menu.png');
+  width: 80px;
+  height: 55px;
+  background-color: inherit;
   padding: 16px;
   font-size: 35px;
   font-weight: 700;
@@ -71,7 +75,7 @@ body{
   cursor: pointer;
 }
 
-.dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover {
   color: #A3737D;
 }
 
