@@ -34,15 +34,7 @@ body{
   width: 50%;
   height: 150px;
 }
-@media screen and (max-width: 600px) {
- .column-right li {
-   display: block;
-   padding: 0 20px;
- }
- ul {
-   margin-top: 20px;
- }
-}
+
 
 .top-bar-logo {
   height: 150px;
@@ -66,19 +58,26 @@ ul {
 }
 
  .column-right li {
-   display: inline-block;
+   display: block;
    color: #8D1C32;
    padding: 0 20px;
 
  }
- @media screen and (max-width: 970px) {
+ @media screen and (max-width: 700px) {
   .column-right li {
-    display: block;
      padding: 0 20px;
   }
   ul {
     margin-top: 20px;
   }
+}
+
+@media screen and (min-width: 600px) {
+ .column-right li {
+    padding: 0 20px;
+    display: inline-block;
+ }
+
 }
 
 
