@@ -20,7 +20,7 @@ body{
   font-size: 25px;
   background-color: white;
   float: left;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
 
 }
 
@@ -156,7 +156,13 @@ body{
 
 
 .second-section {
+  width: 100%;
+  padding-top: 50px;
+  text-align: center;
+}
 
+.resultat-bild {
+  width: 450px;
 }
 
 .team-img {
