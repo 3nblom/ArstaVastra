@@ -66,6 +66,7 @@ body{
   color: #8D1C32;
   padding: 16px;
   font-size: 35px;
+  font-weight: 700;
   border: none;
   cursor: pointer;
 }
@@ -92,7 +93,8 @@ body{
 }
 
 .dropdown-content a {
-  padding: 12px 16px;
+  padding: 20px 16px;
+  font-weight: 700;
   text-decoration: none;
   display: block;
   background-color: rgba(255, 255, 255, 0.3); /** background transparant **/
@@ -145,11 +147,7 @@ body{
 
 /****************** 2nd section ******************/
 
-.top-hr {
-  width: 80%;
-  border-width: 2px;
-  color: #B9B9B9;
-}
+
 
 .second-section {
 
