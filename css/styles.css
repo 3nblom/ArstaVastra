@@ -1,5 +1,6 @@
 body{
   padding: 0;
+  margin: 0;
   font-family: 'Open Sans', sans-serif;
   background-image: url('background.png');
   background-position: center center;
@@ -7,23 +8,22 @@ body{
   background-attachment: fixed;
   background-size: cover; /*this sets the image to fullscreen covering the whole screen */
   background-color: white; /** when image is loading, the background is white */
-  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.image.jpg',sizingMethod='scale');
-  -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='image.jpg',sizingMethod='scale')";
+
 }
 
 hr {
-  border-color: #ededed;
-  width: 20%;
+  border-color: #9F9F9F;
+  width: 50%;
   border-style: none;
-  border-top-style: dotted;
-  border-width: 10px;
+  border-top-style: solid;
+  border-width: 1.5px;
   padding: 20px;
 }
 
 /****************** First section ******************************************************/
 
-.row {
-  margin-left: 20px;
+.first-section {
+  margin: 0px;
 }
 
 @media screen and (max-width: 1050px) {
@@ -36,7 +36,7 @@ hr {
 
 .column {
   height: 150px;
-  width: 48.9%;
+  width: 50%;
   font-size: 25px;
   float: left;
   margin-bottom: 200px;
@@ -208,10 +208,11 @@ hr {
 .nextgame {
   width: 50%;
   float: left;
+  margin-bottom: 100px;
 }
 .nextgame-bild {
   width: 450px;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 
 @media screen and (max-width: 1050px) {
@@ -238,7 +239,7 @@ hr {
 
 .third-section {
   width: 100%;
-  margin: 100px 0;
+
   text-align: center;
 }
 
@@ -248,7 +249,7 @@ hr {
 
 .tabell-bild {
   width: 550px;
-  margin-bottom: 60px;
+  margin: 100px 0;
 }
 
 
