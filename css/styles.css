@@ -11,52 +11,71 @@ body{
   -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='image.jpg',sizingMethod='scale')";
 }
 
+hr {
+  border-color: #ededed;
+  width: 20%;
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 10px;
+  padding: 20px;
+}
 
-/****************** First section ******************/
+/****************** First section ******************************************************/
+
+.row {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1050px) {
+
+  .row {
+    margin: 0;
+  }
+
+}
 
 .column {
   height: 150px;
+  width: 48.9%;
   font-size: 25px;
-  background-color: white;
   float: left;
   margin-bottom: 200px;
+  border-bottom: solid #8D1C32;
+
 
 }
 
 
 
 
-/****************** left column ******************/
+/****************** left column ******************************************************/
 
 .column-left {
-  /** background-color: #E2E0E0; **/
-  background-color: rgba(255, 255, 255, 0.3); /** background transparant **/
+  background-color: rgba(255, 255, 255, 0.9); /** background transparant **/
   text-align: center;
-  width: 50%;
   height: 150px;
 }
 
 .top-bar-logo {
-  height: 150px;
+  height: 140px;
   clear: left;
+  padding-bottom: 5px;
 }
 
 
 
 
-/****************** right column ******************/
+/****************** right column ******************************************************/
 
 .column-right {
-  /** background-color: #E8D6D6; **/
-  background-color: rgba(255, 255, 255, 0.3); /** background transparant **/
+  background-color: rgba(255, 255, 255, 0.9); /** background transparant **/
   text-align: center;
-  width: 50%;
   height: 150px;
   line-height: 40px;
 }
 
 
-/****************** Drop-down button ******************/
+/****************** Drop-down button ******************************************************/
 
 .dropbtn {
 
@@ -99,7 +118,7 @@ body{
   font-weight: 700;
   text-decoration: none;
   display: block;
-  background-color: rgba(255, 255, 255, 0.3); /** background transparant **/
+  background-color: rgba(255, 255, 255, 0.7); /** background transparant **/
 }
 
 .dropdown a:hover {
@@ -151,22 +170,23 @@ body{
     font-size: 35px;
   }
   .column {
-    height: 180px;
+    height: 200px;
   }
   .top-bar-logo {
-    height: 180px;
+    height: 185px;
   }
 
 } /** bigger font on smaller screens **/
 
 
-/****************** 2nd section ******************/
+/****************** 2nd section ******************************************************/
 
 
 
 .second-section {
   width: 100%;
   padding-top: 50px;
+  margin-bottom: 100px;
   text-align: center;
 }
 
@@ -184,6 +204,10 @@ body{
   width: 50%;
   float: left;
 }
+.nextgame-bild {
+  width: 450px;
+  margin-bottom: 60px;
+}
 
 @media screen and (max-width: 1050px) {
   .column {
@@ -195,4 +219,56 @@ body{
   .nextgame {
     width: 100%
   }
+  .resultat-bild {
+    width: 550px;
+    margin-bottom: 100px;
+  }
+  .nextgame-bild {
+    width: 550px;
+    margin-bottom: 150px;
+  }
 }
+
+/****************** 3rd section ******************************************************/
+
+.third-section {
+  width: 100%;
+  margin: 100px 0;
+  text-align: center;
+}
+
+.tabell {
+  width: 100%;
+}
+
+.tabell-bild {
+  width: 550px;
+  margin-bottom: 60px;
+}
+
+
+@media screen and (max-width: 1050px) {
+  .column {
+    margin-bottom: 250px;
+  }
+  .resultat {
+    width: 100%;
+  }
+  .nextgame {
+    width: 100%
+  }
+  .resultat-bild {
+    width: 550px;
+    margin-bottom: 100px;
+  }
+  .nextgame-bild {
+    width: 550px;
+    margin-bottom: 150px;
+  }
+}
+
+
+
+
+
+/****************** 4th section ******************************************************/
