@@ -29,7 +29,7 @@ hr {
 @media screen and (max-width: 1050px) {
 
   .row {
-    margin: 0;
+    margin: 10px;
   }
 
 }
@@ -100,6 +100,7 @@ hr {
   position: relative;
   display: inline-block;
   margin-top: 60px;
+
 }
 
 .dropdown-content {
@@ -118,7 +119,11 @@ hr {
   font-weight: 700;
   text-decoration: none;
   display: block;
-  background-color: rgba(255, 255, 255, 0.7); /** background transparant **/
+  background-color: rgba(255, 255, 255, 0.99); /** background transparant **/
+}
+
+.dropdown-content-last {
+  border-bottom: solid #8D1C32;
 }
 
 .dropdown a:hover {
