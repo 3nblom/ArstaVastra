@@ -1,6 +1,7 @@
 body{
   padding: 0;
   margin: 0;
+  text-align: center;
   font-family: 'Open Sans', sans-serif;
   background-image: url('background.png');
   background-position: center center;
@@ -271,3 +272,62 @@ hr {
 
 
 /****************** 4th section ******************************************************/
+
+.fourth-section{
+  text-align: center;
+}
+
+#testimonials {
+  text-align: center;
+  color: black;
+  width: 80%;
+  margin-left: 10%;
+  display: none;
+}
+
+@media screen and (min-width: 1050px) {
+  #testimonials {
+    display: inline;
+  }
+}
+
+#testimonials h2 {
+  margin-top: 30px;
+}
+
+.testimonial-image {
+  width: 50%;
+}
+
+#carouselExampleControls {
+
+}
+
+.carousel-item {
+  padding: 5% 15%;
+}
+
+.carousel-inner{
+
+}
+.carousel-item{
+
+}
+.carousel-match {
+  width: 20%;
+  float: left;
+}
+
+.carousel-goals {
+  padding: 40% 0;
+}
+.carousel-divider {
+  padding: 40% 0;
+  text-align: center;
+}
+
+.carousel-nextmatch {
+  width: 50%;
+  float: left;
+  padding: 5%;
+}
