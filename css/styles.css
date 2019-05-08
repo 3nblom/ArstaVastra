@@ -9,7 +9,6 @@ body{
   background-color: white; /** when image is loading, the background is white */
   filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.image.jpg',sizingMethod='scale');
   -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='image.jpg',sizingMethod='scale')";
-
 }
 
 
@@ -24,12 +23,7 @@ body{
 
 }
 
-@media screen and (max-width: 1050px) {
 
-  .column-right {
-    font-size: 35px;
-  }
-} /** bigger font on smaller screens **/
 
 
 /****************** left column ******************/
@@ -38,14 +32,16 @@ body{
   /** background-color: #E2E0E0; **/
   background-color: rgba(255, 255, 255, 0.3); /** background transparant **/
   text-align: center;
-  width: 40%;
+  width: 50%;
   height: 150px;
 }
-
 
 .top-bar-logo {
   height: 150px;
+  clear: left;
 }
+
+
 
 
 /****************** right column ******************/
@@ -54,7 +50,7 @@ body{
   /** background-color: #E8D6D6; **/
   background-color: rgba(255, 255, 255, 0.3); /** background transparant **/
   text-align: center;
-  width: 60%;
+  width: 50%;
   height: 150px;
   line-height: 40px;
 }
@@ -149,6 +145,19 @@ body{
 }
 
 
+@media screen and (max-width: 1050px) {
+
+  .column-right {
+    font-size: 35px;
+  }
+  .column {
+    height: 180px;
+  }
+  .top-bar-logo {
+    height: 180px;
+  }
+
+} /** bigger font on smaller screens **/
 
 
 /****************** 2nd section ******************/
@@ -161,18 +170,29 @@ body{
   text-align: center;
 }
 
-@media screen and (max-width: 1050px) {
-
-  .column {
-    margin-bottom: 250px;
-  }
+.resultat {
+  width: 50%;
+  float: left;
 }
 
 .resultat-bild {
   width: 450px;
+  margin-bottom: 60px;
 }
 
-.team-img {
-  width: 800px;
+.nextgame {
+  width: 50%;
+  float: left;
+}
 
+@media screen and (max-width: 1050px) {
+  .column {
+    margin-bottom: 250px;
+  }
+  .resultat {
+    width: 100%;
+  }
+  .nextgame {
+    width: 100%
+  }
 }
