@@ -23,14 +23,10 @@ hr {
 /****************** First section ******************************************************/
 
 .first-section {
-  margin: 0px;
 }
 
 @media screen and (max-width: 1050px) {
 
-  .row {
-    margin: 10px;
-  }
 
 }
 
@@ -189,7 +185,6 @@ hr {
 
 
 .second-section {
-  width: 100%;
   padding-top: 50px;
   margin-bottom: 100px;
   text-align: center;
@@ -199,19 +194,19 @@ hr {
   width: 50%;
   float: left;
 }
-
-.resultat-bild {
-  width: 450px;
-  margin-bottom: 60px;
-}
-
 .nextgame {
   width: 50%;
   float: left;
   margin-bottom: 100px;
 }
+
+.resultat-bild {
+  width: 400px;
+  margin-bottom: 100px;
+}
+
 .nextgame-bild {
-  width: 450px;
+  width: 400px;
   margin-bottom: 100px;
 }
 
@@ -223,15 +218,13 @@ hr {
     width: 100%;
   }
   .nextgame {
-    width: 100%
+    width: 100%;
   }
   .resultat-bild {
-    width: 550px;
-    margin-bottom: 100px;
+    margin: 0 0 100px 0;
   }
   .nextgame-bild {
-    width: 550px;
-    margin-bottom: 150px;
+    margin-bottom: 0 0 150px 0;
   }
 }
 
