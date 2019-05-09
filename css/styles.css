@@ -8,7 +8,7 @@ body{
   background-repeat: repeat-y; /*we want to have one single image not a repeated one */
   background-attachment: fixed;
   background-size: cover; /*this sets the image to fullscreen covering the whole screen */
-  background-color: white; /** when image is loading, the background is white */
+  /** background-color: white; /** when image is loading, the background is white */
 
 }
 
@@ -200,8 +200,6 @@ hr {
   width: 90%;
   margin: 0 0 50px 5%;
   height: 600px;
-  border: solid white;
-  border-radius: 2%;
 }
 
 .static-header {
