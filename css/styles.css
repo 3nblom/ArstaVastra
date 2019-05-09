@@ -201,13 +201,18 @@ hr {
 /**** static *****/
 
 .result-static {
-  width: 90%;
+  width: 100%;
   margin: 0 0 50px 5%;
   height: 600px;
 }
 
 .static-header {
   margin-top: 80px;
+}
+
+.static-image {
+  width: 50%;
+  margin-bottom: 20px;
 }
 
 .static-match {
