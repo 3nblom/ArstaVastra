@@ -26,20 +26,15 @@ hr {
 .first-section {
 }
 
-@media screen and (max-width: 1050px) {
 
-
-}
-
-.column {
+.column { /** both columns in the first section **/
   height: 150px;
   width: 50%;
   font-size: 25px;
   float: left;
-  margin-bottom: 200px;
+  margin-bottom: 100px; /** push down second-section **/
   border-bottom: solid #8D1C32;
-
-
+  background-color: rgba(255, 255, 255, 0.8); /** background transparant **/
 }
 
 
@@ -48,7 +43,6 @@ hr {
 /****************** left column ******************************************************/
 
 .column-left {
-  background-color: rgba(255, 255, 255, 0.9); /** background transparant **/
   text-align: center;
   height: 150px;
 }
@@ -65,7 +59,6 @@ hr {
 /****************** right column ******************************************************/
 
 .column-right {
-  background-color: rgba(255, 255, 255, 0.9); /** background transparant **/
   text-align: center;
   height: 150px;
   line-height: 40px;
@@ -120,7 +113,7 @@ hr {
 }
 
 .dropdown-content-last {
-  border-bottom: solid #8D1C32;
+  
 }
 
 .dropdown a:hover {
@@ -187,11 +180,20 @@ hr {
 
 .second-section {
   padding-top: 50px;
-  margin-bottom: 100px;
   text-align: center;
 }
 
-.resultat {
+@media screen and (min-width: 1050px) {
+  .result-static {
+  display: none;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .second-section {
+  display: inline-block;
+  }
+}
+/** .resultat {
   width: 50%;
   float: left;
 }
@@ -212,9 +214,7 @@ hr {
 }
 
 @media screen and (max-width: 1050px) {
-  .column {
-    margin-bottom: 250px;
-  }
+
   .resultat {
     width: 100%;
   }
@@ -227,7 +227,93 @@ hr {
   .nextgame-bild {
     margin-bottom: 0 0 150px 0;
   }
+} **/
+
+/**** static *****/
+
+.result-static {
+  width: 100%;
+  height: 500px;
 }
+
+.nextgame-header {
+  margin-top: 80px;
+}
+
+.static-match {
+  width: 40%;
+  float: left;
+  padding: 5%;
+}
+
+.static-match2 {
+  width: 20%;
+  float: left;
+  padding-top: 8%;
+}
+.static-match2 h1 {
+  font-size: 60px;
+}
+
+/****************** Carousel **********************/
+
+#result-carousel {
+  text-align: center;
+  color: black;
+  width: 600px;;
+
+  display: none;
+}
+
+@media screen and (min-width: 1050px) {
+  #result-carousel {
+    display: inline;
+  }
+}
+
+#result-carousel h2 {
+  margin-top: 30px;
+}
+
+.result-carousel-image {
+  width: 50%;
+}
+
+#carouselExampleControls {
+
+}
+
+.carousel-item {
+  padding: 5% 15%;
+  height: 800px;
+}
+
+.carousel-match {
+  width: 40%;
+  float: left;
+  padding: 5%;
+}
+
+.carousel-match2 {
+  width: 20%;
+  float: left;
+  padding-top: 8%;
+}
+.carousel-match2 h1 {
+  font-size: 60px;
+}
+
+.carousel-goals {
+  padding: 40% 0;
+}
+
+
+.carousel-nextmatch {
+  width: 50%;
+  float: left;
+  padding: 5% 10%;
+}
+
 
 /****************** 3rd section ******************************************************/
 
@@ -243,7 +329,7 @@ hr {
 
 .tabell-bild {
   width: 550px;
-  margin: 100px 0;
+  padding: 100px 0;
 }
 
 
@@ -272,62 +358,3 @@ hr {
 
 
 /****************** 4th section ******************************************************/
-
-.fourth-section{
-  text-align: center;
-}
-
-#testimonials {
-  text-align: center;
-  color: black;
-  width: 80%;
-  margin-left: 10%;
-  display: none;
-}
-
-@media screen and (min-width: 1050px) {
-  #testimonials {
-    display: inline;
-  }
-}
-
-#testimonials h2 {
-  margin-top: 30px;
-}
-
-.testimonial-image {
-  width: 50%;
-}
-
-#carouselExampleControls {
-
-}
-
-.carousel-item {
-  padding: 5% 15%;
-}
-
-.carousel-inner{
-
-}
-.carousel-item{
-
-}
-.carousel-match {
-  width: 20%;
-  float: left;
-}
-
-.carousel-goals {
-  padding: 40% 0;
-}
-.carousel-divider {
-  padding: 40% 0;
-  text-align: center;
-}
-
-.carousel-nextmatch {
-  width: 50%;
-  float: left;
-  padding: 5%;
-}
