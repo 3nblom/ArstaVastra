@@ -233,6 +233,9 @@ hr {
 .static-match2 h1 {
   font-size: 60px;
 }
+.header-clear{ /** in order to not push h2 when team name is long **/
+  clear: both;
+}
 
 /****************** Carousel **********************/
 
