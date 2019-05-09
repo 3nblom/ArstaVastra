@@ -210,6 +210,10 @@ hr {
   margin-top: 80px;
 }
 
+.static-header,
+.carousel-header {
+}
+
 .static-image {
   width: 50%;
   margin-bottom: 20px;
