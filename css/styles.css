@@ -200,7 +200,8 @@ hr {
   width: 90%;
   margin: 0 0 50px 5%;
   height: 600px;
-  border: solid #C7C7C7;
+  border: solid white;
+  border-radius: 2%;
 }
 
 .static-header {
