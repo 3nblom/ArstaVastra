@@ -29,7 +29,6 @@ hr {
 
 .column { /** both columns in the first section **/
   height: 150px;
-  width: 50%;
   font-size: 25px;
   float: left;
   margin-bottom: 100px; /** push down second-section **/
@@ -38,13 +37,12 @@ hr {
 }
 
 
-
-
 /****************** left column ******************************************************/
 
 .column-left {
-  text-align: center;
+  text-align: right;
   height: 150px;
+  width: 25%;
 }
 
 .top-bar-logo {
@@ -53,13 +51,23 @@ hr {
   padding-bottom: 5px;
 }
 
+/****************** middle column ******************************************************/
 
+.column-middle {
+  text-align: left;
+  height: 150px;
+  width: 25%;
+  line-height: 40px;
+  color: #8D1C32;
+  padding: 60px 0 0 20px;
+}
 
 
 /****************** right column ******************************************************/
 
 .column-right {
   text-align: center;
+  width: 50%;
   height: 150px;
   line-height: 40px;
 }
@@ -112,13 +120,6 @@ hr {
   background-color: rgba(255, 255, 255, 0.99); /** background transparant **/
 }
 
-.dropdown-content-last {
-
-}
-
-.dropdown a:hover {
-}
-
 .show {
   display: block;
 }
@@ -163,6 +164,9 @@ hr {
 
   .column-right {
     font-size: 35px;
+  }
+  .column-middle {
+    padding: 70px 20px;
   }
   .column {
     height: 200px;
@@ -249,7 +253,7 @@ hr {
 .carousel-control-prev,
 .carousel-control-next {
   height: 50%;
-  top: 20%;
+  top: 30%;
 }
 
 .carousel-control-prev-icon {
