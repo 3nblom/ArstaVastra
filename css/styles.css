@@ -344,6 +344,11 @@ body{
   border-top: solid 1px;
 }
 
+.second-section-spelschema h1 {
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
 .second-section-spelschema h2 {
   font-size: 30px;
 }
@@ -355,7 +360,15 @@ body{
   width: 30%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1050px) {
+  .second-section-spelschema h1 {
+    font-size: 40px;
+    padding-bottom: 50px;
+  }
+}
+
+
+@media screen and (max-width: 1050px) {
   .second-section-spelschema li {
     width: 30%;
     margin: 10px 0;
