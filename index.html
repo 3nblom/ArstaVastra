@@ -7,8 +7,11 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+
 
 </head>
 
@@ -17,7 +20,7 @@
 <body>
 
   <!--                                      1st section                                  -->
-  <div class="first-section">
+  <section class="first-section">
 
     <div class="column column-left">
       <a href="index.html"><img class="top-bar-logo" src="images/logo.png" alt="logga"></a>
@@ -28,59 +31,62 @@
     </div>
 
 
-  </div>
 
-  <div class="column column-right">
 
-    <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn"></button>
-      <div id="myDropdown" class="dropdown-content">
-        <a href="index.html">Tabell</a>
-        <a href="index.html">Skytteliga</a>
-        <a class="dropdown-content-last" href="index.html">Laget</a>
+    <div class="column column-right">
+
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="index.html" style="color: #A3737D">Startsida</a>
+          <a href="spelschema.html">Spelschema</a>
+          <a href="skytteliga.html">Skytteliga</a>
+        </div>
       </div>
+
+      <ul class="dropdown-inactive">
+        <li><a href="index.html" style="color: #A3737D"><strong>Startsida</strong></a></li>
+        <li><a href="spelschema.html"><strong>Spelschema</strong></a></li>
+        <li><a href="skytteliga.html"><strong>Skytteliga</strong></a></li>
+        </li>
+      </ul>
+
     </div>
 
-    <ul class="dropdown-inactive">
-      <li><a href="index.html"><strong>Tabell</strong></a></li>
-      <li><a href="index.html"><strong>Skytteliga</strong></a></li>
-      <li><a href="index.html"><strong>Laget</strong></a></li>
-      </li>
-    </ul>
-
-  </div>
-
-  </div>
+  </section>
 
 
 
   <!--                                      2nd section                                  -->
-  <div class="second-section">
+  <section class="second-section">
 
     <section id="static-section">
 
       <div class="result-static">
         <h2 class="static-header"><b>Senaste matchen</b></h2>
         <div class="static-match">
-          <img class="static-image" src="images/logo.png">
-          <br>
-          <h2>Årsta Västra</h2>
-        </div>
-        <div class="static-match2">
-          <h1 class="carousel-goals"><b>2 - 0</b></h1>
-        </div>
-        <div class="static-match">
-          <img class="static-image" src="images/logo-tamro.png">
-          <br>
-          <h2>Tamro AB</h2>
-        </div>
-      </div>
-      <div class="result-static">
-        <h2 class="static-header"><b>Nästa match</b></h2>
-        <div class="static-match">
           <img class="static-image" src="images/logo-sabis.png">
           <br>
           <h2>Sabis Fruängen FC</h2>
+        </div>
+        <div class="static-match2">
+          <h1 class="carousel-goals"><b>6 - 0</b></h1>
+        </div>
+        <div class="static-match">
+          <img class="static-image" src="images/logo.png">
+          <br>
+          <h2>Årsta Västra</h2>
+
+        </div>
+      </div>
+
+
+      <div class="result-static">
+        <h2 class="static-header"><b>Nästa match</b></h2>
+        <div class="static-match">
+          <img class="static-image" src="images/logo-avgaallt.png">
+          <br>
+          <h2>Avgå Allt</h2>
         </div>
         <div class="static-match2">
           <h1 class="carousel-goals"><b></b></h1>
@@ -104,17 +110,18 @@
             <h2 class="carousel-header"><b>Senaste matchen</b></h2>
 
             <div class="carousel-match">
+              <img class="result-carousel-image" src="images/logo-sabis.png">
+              <br>
+              <h2>Sabis Fruängen FC</h2>
+            </div>
+            <div class="carousel-match2">
+              <h1 class="carousel-goals"><b>6 - 0</b></h1>
+            </div>
+            <div class="carousel-match">
               <img class="result-carousel-image" src="images/logo.png">
               <br>
               <h2>Årsta Västra</h2>
-            </div>
-            <div class="carousel-match2">
-              <h1 class="carousel-goals"><b>2 - 0</b></h1>
-            </div>
-            <div class="carousel-match">
-              <img class="result-carousel-image" src="images/logo-tamro.png">
-              <br>
-              <h2>Tamro AB</h2>
+
             </div>
 
           </div>
@@ -123,9 +130,9 @@
             <h2 class="carousel-header"><b>Nästa match</b></h2>
 
             <div class="carousel-nextmatch">
-              <img class="result-carousel-image" src="images/logo-sabis.png">
+              <img class="result-carousel-image" src="images/logo-avgaallt.png">
               <br>
-              <h2>Sabis Fruängen FC</h2>
+              <h2>Avgå Allt</h2>
             </div>
 
             <div class="carousel-nextmatch">
@@ -148,25 +155,8 @@
       </div>
 
     </section>
-  </div>
+  </section>
 
-  </div>
-
-
-
-  <!--                                      3rd section                                  -->
-  <div id="tabella" class="third-section">
-    <div class="tabell">
-      <img class="tabell-bild" src="images/tabell.png" alt="">
-    </div>
-  </div>
-
-
-  <!--                                      4th section                                  -->
-  <div class="fourth-section">
-
-
-  </div>
 
 
 

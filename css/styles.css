@@ -12,18 +12,11 @@ body{
 
 }
 
-hr {
-  border-color: #9F9F9F;
-  width: 50%;
-  border-style: none;
-  border-top-style: solid;
-  border-width: 1.5px;
-  padding: 20px;
-}
 
 /****************** First section ******************************************************/
 
 .first-section {
+  height: 150px;
 }
 
 
@@ -33,7 +26,7 @@ hr {
   float: left;
   margin-bottom: 100px; /** push down second-section **/
   border-bottom: solid #8D1C32;
-  background-color: rgba(255, 255, 255, 0.8); /** background transparant **/
+  background-color: rgba(255, 255, 255, 0.99); /** background transparant **/
 }
 
 
@@ -42,13 +35,13 @@ hr {
 .column-left {
   text-align: right;
   height: 150px;
-  width: 25%;
+  width: 20%;
 }
 
 .top-bar-logo {
   height: 140px;
   clear: left;
-  padding-bottom: 5px;
+  padding: 5px 0;
 }
 
 /****************** middle column ******************************************************/
@@ -56,7 +49,7 @@ hr {
 .column-middle {
   text-align: left;
   height: 150px;
-  width: 25%;
+  width: 20%;
   line-height: 40px;
   color: #8D1C32;
   padding: 60px 0 0 20px;
@@ -67,7 +60,7 @@ hr {
 
 .column-right {
   text-align: center;
-  width: 50%;
+  width: 60%;
   height: 150px;
   line-height: 40px;
 }
@@ -136,7 +129,7 @@ hr {
  }
 
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1060px) {
  .column-right li {
     padding: 0 20px;
     display: inline-block;
@@ -182,9 +175,15 @@ hr {
 
 
 
+
 .second-section {
-  padding-top: 50px;
   text-align: center;
+}
+
+@media screen and (max-width: 1050px) { /** Push down second section on smaller screens **/
+  .first-section {
+    margin-bottom: 80px;
+  }
 }
 
 @media screen and (min-width: 1050px) { /** when above 1050px static will not show **/
@@ -310,31 +309,121 @@ hr {
 }
 
 
+
+
+
+
+
+
+
+/***************************************************************************************************/
+/********************************************* SPELSCHEMA ******************************************/
+/***************************************************************************************************/
+
+
+
+.second-section-spelschema {
+  text-align: center;
+  width: 100%;
+}
+
+.second-section-spelschema li {
+  list-style: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.second-section-spelschema ul {
+  margin-bottom: 10px;
+  padding-inline-start: 0;
+}
+
+.second-section-spelschema hr {
+  width: 50%;
+  border-top: solid 1px;
+}
+
+.second-section-spelschema h2 {
+  font-size: 30px;
+}
+
+.second-section-spelschema h3 {
+}
+
+.second-section-spelschema img {
+  width: 30%;
+}
+
+@media screen and (max-width: 900px) {
+  .second-section-spelschema li {
+    width: 30%;
+    margin: 10px 0;
+  }
+  .second-section-spelschema hr {
+    width: 70%;
+  }
+}
+
 /****************** 3rd section ******************************************************/
 
-.third-section {
-  width: 100%;
-  text-align: center;
-}
 
-.tabell {
-  width: 100%;
-}
 
-.tabell-bild {
-  width: 550px;
-  padding: 100px 0;
-}
+@media screen and (min-width: 1050px) { /** Push down second section on smaller screens **/
 
+  .tabell-bild {
+    width: 800px;
+    margin: 100px;
+  }
+}
 
 @media screen and (max-width: 1050px) { /** Push down second section on smaller screens **/
-  .column {
-    margin-bottom: 250px;
+  .tabell-bild {
+    width: 90%;
+    margin: 100px 5%;
   }
 }
 
 
 
+/***************************************************************************************************/
+/********************************************* Skytteliga ******************************************/
+/***************************************************************************************************/
 
 
-/****************** 4th section ******************************************************/
+
+.second-section-skytteliga {
+text-align: center;
+}
+
+.second-section-skytteliga table, th, td {
+  border-collapse: collapse;
+  text-align: center;
+}
+#table-skytteliga {
+  width: 70%;
+  margin-left: 15%;
+  border: 1px solid #8D1C32;
+}
+
+@media screen and (max-width: 1050px) { /** Push down second section on smaller screens **/
+  #table-skytteliga {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+#table-skytteliga th, td {
+  padding: 15px;
+}
+
+#table-skytteliga th {
+  border-bottom: 1px solid #8D1C32;
+}
+
+
+#table-skytteliga tr:nth-child(even) {
+  background-color: #F9F7F5;
+}
+#table-skytteliga tr:nth-child(odd) {
+  background-color: #fff;
+}

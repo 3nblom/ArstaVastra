@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Årsta Västra</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+
+
+</head>
+
+
+
+<body>
+
+  <!--                                      1st section                                  -->
+  <section class="first-section">
+
+    <div class="column column-left">
+      <a href="index.html"><img class="top-bar-logo" src="images/logo.png" alt="logga"></a>
+    </div>
+
+    <div class="column column-middle">
+      <h2>Årsta Västra</h2>
+    </div>
+
+
+
+
+    <div class="column column-right">
+
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="index.html">Startsida</a>
+          <a href="spelschema.html">Spelschema</a>
+          <a href="skytteliga.html" style="color: #A3737D">Skytteliga</a>
+        </div>
+      </div>
+
+      <ul class="dropdown-inactive">
+        <li><a href="index.html"><strong>Startsida</strong></a></li>
+        <li><a href="spelschema.html"><strong>Spelschema</strong></a></li>
+        <li><a href="skytteliga.html" style="color: #A3737D"><strong>Skytteliga</strong></a></li>
+      </ul>
+
+    </div>
+
+  </section>
+
+
+
+  <!--                                      2nd section                                  -->
+
+<section class="second-section-skytteliga">
+
+  <h3><strong>Skytteliga</strong></h3>
+  <br>
+  <table id="table-skytteliga">
+    <tr>
+      <th class="td-1">Namn</th>
+      <th class="td-2">Matcher</th>
+      <th class="td-3">Mål</th>
+      <th class="td-4">Assist</th>
+      <th class="td-5">Poäng</th>
+    </tr>
+
+    <tr>
+      <td>Isak Zarins</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td><strong>1</strong></td>
+    </tr>
+
+    <tr>
+      <td>Markus Englin</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td><strong>1</strong></td>
+    </tr>
+  </table>
+
+</section>
+
+
+
+  <!--                                      4th section                                  -->
+
+
+
+
+
+
+
+  <script>
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>
