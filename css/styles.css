@@ -311,6 +311,23 @@ body{
 
 
 
+/********************************************* Footer ******************************************/
+
+#footer {
+  height: 100px;
+  background-color: white;
+  border-top: solid #8D1C32;
+}
+
+#footer div {
+  width: 70%;
+  margin-left: 15%;
+  text-align: left;
+}
+
+#footer p {
+  margin-top: 20px;
+}
 
 
 
@@ -340,7 +357,7 @@ body{
 }
 
 .second-section-spelschema hr {
-  width: 50%;
+  width: 500px;
   border-top: solid 1px;
 }
 
@@ -385,24 +402,65 @@ body{
 }
 
 /****************** 3rd section ******************************************************/
+/****************** Tabell ******************/
 
-
-
-@media screen and (min-width: 1050px) { /** Push down second section on smaller screens **/
-
-  .tabell-bild {
-    width: 800px;
-    margin: 100px;
-  }
+.third-section-tabell {
+text-align: center;
+font-size: 120%;
+margin: 100px 0;
 }
 
-@media screen and (max-width: 1050px) { /** Push down second section on smaller screens **/
-  .tabell-bild {
+.td-2 {
+  text-align: left;
+}
+
+.third-section-tabell table, th, td {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.td-border-bottom {
+  border-bottom: solid #4E8133;
+}
+
+.td-border-top {
+  border-top: solid #AD3232;
+}
+
+
+
+#table-tabell {
+  width: 70%;
+  margin-left: 15%;
+  border: 1px solid #8D1C32;
+}
+
+@media screen and (max-width: 1050px) {
+  #table-tabell {
     width: 90%;
-    margin: 100px 5%;
+    margin-left: 5%;
+  }
+  .third-section-tabell {
+  text-align: center;
+  font-size: 150%;
   }
 }
 
+#table-tabell th, td {
+  padding: 15px;
+}
+
+#table-tabell th {
+  border-bottom: 1px solid #8D1C32;
+}
+
+
+#table-tabell tr:nth-child(even) {
+  background-color: #F9F7F5;
+}
+#table-tabell tr:nth-child(odd) {
+  background-color: #fff;
+}
 
 
 /***************************************************************************************************/
@@ -413,6 +471,7 @@ body{
 
 .second-section-skytteliga {
 text-align: center;
+height: 1000px;
 font-size: 120%;
 }
 
