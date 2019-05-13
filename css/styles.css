@@ -402,6 +402,7 @@ body{
 }
 
 /****************** 3rd section ******************************************************/
+
 /****************** Tabell ******************/
 
 .third-section-tabell {
@@ -412,6 +413,7 @@ margin: 100px 0;
 
 .td-2 {
   text-align: left;
+
 }
 
 .third-section-tabell table, th, td {
@@ -420,19 +422,17 @@ margin: 100px 0;
 }
 
 .td-border-bottom {
-  border-bottom: solid #4E8133;
+  border-bottom: solid 1px #4E8133;
 }
 
 .td-border-top {
-  border-top: solid #AD3232;
+  border-top: solid 1px #AD3232;
 }
-
-
 
 #table-tabell {
   width: 70%;
   margin-left: 15%;
-  border: 1px solid #8D1C32;
+  border: 1px solid #4A78B7;
 }
 
 @media screen and (max-width: 1050px) {
@@ -450,16 +450,17 @@ margin: 100px 0;
   padding: 15px;
 }
 
-#table-tabell th {
-  border-bottom: 1px solid #8D1C32;
-}
-
 
 #table-tabell tr:nth-child(even) {
-  background-color: #F9F7F5;
+  background-color: #F5F5F5;
 }
 #table-tabell tr:nth-child(odd) {
   background-color: #fff;
+}
+#table-tabell tr:nth-child(1) {
+  background-color: #4A78B7;
+  color: white;
+  border: none;
 }
 
 
@@ -471,7 +472,7 @@ margin: 100px 0;
 
 .second-section-skytteliga {
 text-align: center;
-height: 1000px;
+height: 1150px;
 font-size: 120%;
 }
 
@@ -482,7 +483,7 @@ font-size: 120%;
 #table-skytteliga {
   width: 70%;
   margin-left: 15%;
-  border: 1px solid #8D1C32;
+  border: 1px solid #4A78B7;
 }
 
 @media screen and (max-width: 1050px) { /** Push down second section on smaller screens **/
@@ -500,14 +501,14 @@ font-size: 120%;
   padding: 15px;
 }
 
-#table-skytteliga th {
-  border-bottom: 1px solid #8D1C32;
-}
-
-
 #table-skytteliga tr:nth-child(even) {
   background-color: #F9F7F5;
 }
 #table-skytteliga tr:nth-child(odd) {
   background-color: #fff;
+}
+#table-skytteliga tr:nth-child(1) {
+  background-color: #4A78B7;
+  color: white;
+  border: none;
 }
